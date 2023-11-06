@@ -1,5 +1,5 @@
 import React from "react";
-import YourBotArmy from "./YourBotArmy";
+import YourBotArmy from "../YourBotArmy";
 import BotCollection from "./BotCollection";
 
 function BotsPage({botCollection, setBotCollection, setCheckBotCollection}) {
