@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import BotsPage from "./BotsPage";
+import React from 'react';
+import BotsPage from "./components/BotsPage";
 
 function App() {
   //setting initial states for the bot collection
@@ -9,7 +9,7 @@ function App() {
   //rendering the bots
   //fetching data from the local server
   React.useEffect(() => {
-    fetch("http://localhost:8002/bots")
+    fetch("http://localhost:3000/bots")
       .then(res => res.json())
       .then(bots => {
         //updating state
